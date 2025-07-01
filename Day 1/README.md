@@ -28,3 +28,10 @@
  - One pointer i traverses the entire array.
  - The other pointer j keeps track of where the next valid (non-val) element should be placed
  - remaning is simalar to the aboce LC 26
+
+# LC 344
+
+ - here we use two pointer technique
+ - will take one pointer at the start and one on the end and swap the values in plae
+ - increment i and decrement j by 1 using while "i < j"
+ - return string
