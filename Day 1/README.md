@@ -21,4 +21,10 @@
  - If the current element nums[i] is different from the previous element nums[i - 1], it is a unique element.
  - Place this unique element at position j.
  - Move j forward to prepare for the next unique element.
- 
+
+
+# LC 27
+ - This solution uses the two-pointer technique:
+ - One pointer i traverses the entire array.
+ - The other pointer j keeps track of where the next valid (non-val) element should be placed
+ - remaning is simalar to the aboce LC 26
