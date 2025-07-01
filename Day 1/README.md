@@ -35,3 +35,10 @@
  - will take one pointer at the start and one on the end and swap the values in plae
  - increment i and decrement j by 1 using while "i < j"
  - return string
+
+# LC 283
+
+ - Here also we used two pointer technique.
+ - i to iterate through the entire array.
+ - j to track the position where the next non-zero element should be placed.
+ - Swap elements when a non-zero is encountered to gradually shift all zeros to the end.
