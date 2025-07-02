@@ -76,7 +76,7 @@ Step 5: 110 ^ 010 = 100 (4)
 Time Complexity: O(n), where n is the length of the input list nums.
 Space Complexity: O(1), as we are using a constant amount of space for the variable result.
 
-# LC 48>
+# LC 48
 
 # Approach
  - This Python solution rotates the matrix in-place using the following steps:
@@ -88,3 +88,34 @@ Reverse Each Row
 # Time and Space Complexity
  - Time Complexity: O(n²) – Each element is visited once during the transpose and once during the row reversal.
  - Space Complexity: O(1) – The rotation is performed in-place with no extra space.
+
+# LC 73.
+
+Approach 1: O(m + n) Space (Set-Based Solution)
+Idea:
+ - Traverse the matrix and record the indices of rows and columns that contain zeros.
+ - Traverse the matrix again and set elements to 0 if they are in a marked row or column.
+
+Algorithm:
+ - Create two sets: zero_rows and zero_cols.
+ - First pass: Identify and store all rows and columns that need to be zeroed.
+ - Second pass: Set matrix elements to 0 based on marked rows and columns.
+
+Complexity:
+ - Time: O(m * n)
+ - Space: O(m + n)
+
+Approach 2: O(1) Space (Optimal Solution)
+Idea:
+ - Use the first row and first column as markers to avoid using extra space.
+ - Use a separate flag to track if the first row should be zeroed.
+
+Algorithm:
+ - Check if the first row and first column need to be zeroed.
+ - Use the first row and first column as marker arrays.
+ - Second pass: Zero cells based on these markers.
+ - Zero the first row and/or first column if needed.
+
+Complexity:
+ - Time: O(m * n)
+ - Space: O(1)
