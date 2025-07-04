@@ -25,8 +25,7 @@ class Solution(object):
         :type head: Optional[ListNode]
         :rtype: Optional[ListNode]
         """
-        if not head:
-            return None
+
         if not head or not head.next:
             return head
         odd = head
