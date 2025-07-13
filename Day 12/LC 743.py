@@ -16,6 +16,7 @@
 # Output: 2
 
 from collections import defaultdict
+import heapq
 class Solution(object):
     def networkDelayTime(self, times, n, k):
         """
